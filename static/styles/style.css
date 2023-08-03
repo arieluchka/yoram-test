@@ -1,0 +1,11 @@
+body{
+    background-image: url('https://www.thelist.com/img/gallery/the-truth-about-the-friends-logo/l-intro-1621439640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+table, th, td {
+    border: 1px solid green;
+    -webkit-text-fill-color: red;
+  }

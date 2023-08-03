@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>F.R.I.E.N.D.S forever!</title>
+    <link rel="stylesheet" href="static/styles/style.css">
+</head>
+<body>
+    <table border="5">
+        <tr><th><img src="https://m.media-amazon.com/images/I/91K1ZEk9oiL._RI_.jpg" height="160" widht="200"/></th><th>All friends</th><td>{% for user in all_users %}
+            <img src="{{ user.imglink }}" height="160" widht="200"/>
+            {% endfor %}</td></tr>
+        <tr><th><img src="https://image.cnbcfm.com/api/v1/image/100373688-friends-nbc-show-still.jpg?v=1357936179&w=929&h=523&vtcrop=y" height="160" widht="200"/></th><th>Joyful friends</th><td>{% for user in joyful_users %}
+            <img src="{{ user.imglink }}" height="160" widht="200"/>
+            {% endfor %}</td></tr>
+        <tr><th><img src="https://images.entertainment.ie/uploads/2021/05/25161201/monica-geller-friends-door-1563283330.jpg?w=1280&h=768&q=high" height="160" widht="200"/></th><th>Unjoyful friends</th><td>{% for user in unjoyful_users %}
+            <img src="{{ user.imglink }}" height="160" widht="200"/>
+            {% endfor %}</td></tr>
+    </table>
+</body>
+</html>
